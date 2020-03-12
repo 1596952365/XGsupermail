@@ -1,0 +1,18 @@
+/**
+引入官方文件库
+**/
+@import "./styles/pubicon.wxss";
+/**
+WE-UI
+**/  
+@import "./weui.wxss";
+
+page,view,text,swiper,swiper-item,navigator{
+    padding: 0rpx;
+    margin: 0rpx;
+    box-sizing: border-box;
+}
+
+page{
+    --themeColor:red;
+}

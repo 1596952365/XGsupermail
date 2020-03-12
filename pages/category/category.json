@@ -2,5 +2,5 @@
   "usingComponents": {
     "XGsearch":"../../components/XGsearch/XGsearch"
   },
-  "navigationBarTitleText": "首页"
+  "navigationBarTitleText": "分类"
 }
