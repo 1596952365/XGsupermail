@@ -14,6 +14,15 @@ Page({
   onLoad: function (options) {
 
   },
+  //点击登陆之后获取用户信息并且保存到缓存里面
+  handleGetUserInfo(e){
+    console.log(e)
+    const {userInfo}=e.detail;
+    wx.setStorageSync("userinfo", userInfo);
+    wx.navigateBack({
+      delta: 1
+    });
+  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成

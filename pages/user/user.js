@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    userinfo:{},//缓存中的用户登录
   },
 
   /**
@@ -25,7 +25,14 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
+  onShow () {
+    //在这里面先判断用户有没有登陆，从缓存中看看能不能拿到用户的信息
+    const userinfo=wx.getStorageSync("userinfo");
+  //  const collect=wx.getStorageSync("collect")||[];
+      
+    this.setData({userinfo});
+      
+  
 
   },
 

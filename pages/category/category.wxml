@@ -1,6 +1,8 @@
 <!--pages/category/category.wxml-->
 <view class="cates">
-<XGsearch></XGsearch>
+ <navigator url="../search/search">
+    <XGsearch></XGsearch>
+    </navigator>
  <view class="cates_container">
     <!-- 左侧菜单 -->
     <scroll-view scroll-y class="left_menu">

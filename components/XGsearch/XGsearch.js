@@ -1,7 +1,9 @@
+import { request } from "../../request/index";
 Page({
     data: {
         inputShowed: false,
-        inputVal: ""
+        inputVal: "",
+        goods:[]
     },
     showInput: function () {
         this.setData({
@@ -19,9 +21,14 @@ Page({
             inputVal: ""
         });
     },
-    inputTyping: function (e) {
-        this.setData({
-            inputVal: e.detail.value
-        });
+    TimeId : -1,
+    inputTyping (e) {
+        //点击输入搜索，然后获取用户输入的值
+        //然后查询数据库
+
+        
+       
+        
+      
     }
 });
